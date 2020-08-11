@@ -1,0 +1,118 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    font-size: 56px;
+    color: gray;
+    text-align: center;
+    animation: doimauchu 2s infinite;
+}
+
+@keyframes doimauchu {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    75%  {
+        color: gold;
+    }
+}
+
+
+/*
+section.content {
+    overflow: hidden;
+}*/
+
+section.content {
+    display: flex;
+}
+
+div.car {
+    width: 22%;
+    background-color: gray;
+    text-align: center;
+    padding: 0.5%;
+    margin: 1%;
+    border-radius: 10px;
+    /*float: left;*/
+}
+
+div.car > img {
+    width:100%;
+    transition: transform ease-in 1s;
+}
+
+div.car > img:hover {
+    transform: rotate(-45deg);
+    box-shadow: 4px 5px 2px gold;
+}
+
+footer {
+    background-color: black;
+    color:white;
+    padding:10px;
+}
+
+footer > h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+div.contact {
+    overflow: hidden;
+}
+
+div.contact > div {
+    float: left;
+}
+
+.col25 {
+    width: 25%;
+
+}
+
+.col50 {
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+table.msg, input[type=text], textarea {
+    width: 100%;
+}
+
+table.msg td {
+    padding: 15px;
+}
+
+input[type=text] {
+    padding: 10px;
+}
+
+textarea {
+    padding: 10px;
+    height: 40px;
+}
+
+input[type=submit] {
+    background-color: burlywood;
+    padding: 10px;
+    color: white;
+    border: 1px solid burlywood;
+}
+
+table.msg tr:last-child {
+    text-align: center;   
+}

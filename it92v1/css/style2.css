@@ -1,0 +1,103 @@
+/* CSS HEADER */
+header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    color: gold;
+    text-shadow: 3px 4px 2px blue;
+}
+
+/* CSS NAV */
+nav {
+    background-color: lightgray;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.menu > li {
+    min-width: 120px;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+ul.menu > li:last-child {
+    margin-left: auto;
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color:white;
+}
+
+/* CSS BODY */
+section.content {
+    background-color: darkgray;
+    margin-top: 10px;
+}
+
+div.lang {
+    overflow: auto;
+    border-bottom: 1px solid white;
+}  
+
+div.img-lang {
+    float: left;
+} 
+
+/* CSS FOOTER */
+footer {
+    background-color: rgba(0, 0, 255, 0.6);
+    color:white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left:0;
+    right:0;
+    bottom: 0;
+    animation: doimaunen 1s infinite;
+}
+
+@keyframes doimaunen {
+    from {
+        background-color: rgba(0, 0, 255, 0.6);
+    }
+
+    to {
+        background-color: rgba(255, 0, 0, 0.6);
+    }
+}
+
+/* CSS SUBMENU */
+.subcontent {
+    /*display:none !important;*/
+    position: absolute;
+    background-color: lightgray;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+}
+
+.submenu:hover .subcontent {
+    opacity: 1;
+    visibility: visible;
+    /*display: block !important;*/
+}
+
+div.img-lang > img {
+    transition: transform 1s;
+}
+
+div.img-lang > img:hover {
+    transform: skew(-20deg);
+}
