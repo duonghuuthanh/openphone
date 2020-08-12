@@ -1,0 +1,144 @@
+/* CSS HEADER */
+header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+    text-shadow: 3px 4px goldenrod;
+    font-size: 56px;
+    animation: doimau 1s infinite;
+}
+
+@keyframes doimau {
+    from {
+        color: red;
+    }
+
+    to {
+        color: green;
+    }
+}
+
+/* CSS NAV */
+nav {
+    background-color: lightgray;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul.menu > li {
+    min-width: 150px;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+ul.menu > li:last-child {
+    margin-left: auto;
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* CSS CONTENT */
+section.languages {
+    background-color: gray;
+    margin-top: 10px;
+}
+
+div.lang {
+   overflow: auto;
+   padding: 5px;
+   border-bottom: 1px solid white;
+}
+
+div.image {
+    float:left;
+}
+
+div.image > img {
+    transition: transform ease .5s;
+}
+
+div.image > img:hover {
+    transform: skew(-20deg);
+}
+
+/* CSS FOOTER */
+footer {
+    background-color: rgba(0, 0, 255, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+
+/* CSS SUBMENU */
+.subcontent {
+    /*display: none !important;*/
+    position: absolute;
+    background-color: lightgray;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+}
+
+.submenu:hover .subcontent {
+    opacity: 1;
+    visibility: visible;
+    /*display: block !important;*/
+}
+
+/* CSS SHARE */
+ul.sharing {
+    
+    list-style-type:none;
+    padding: 0;
+}
+
+ul.sharing > li {
+    background-color: rgba(0, 255, 0, 0.4);
+    border-bottom: 1px solid blue;
+    position: fixed;
+    width: 200px;
+    left: -170px;
+    z-index: 999;
+    transition: left .5s;
+    text-align: center;
+}
+
+ul.sharing > li:nth-child(1) {
+    top: 200px;
+}
+
+ul.sharing > li:nth-child(2) {
+    top: 235px;
+}
+
+ul.sharing > li:nth-child(2) {
+    top: 270px;
+}
+
+ul.sharing > li:hover {
+    left: 0;
+}
+
+ul.sharing > li > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
