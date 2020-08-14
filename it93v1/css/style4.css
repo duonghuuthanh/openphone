@@ -1,0 +1,141 @@
+/* CSS HEADER */
+header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    color: red;
+    text-shadow: 3px 4px 2px gold;
+}
+
+/* CSS NAV */
+nav {
+    background-color: lightgray;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul.menu > li {
+    min-width: 150px;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+ul.menu > li:last-child {
+    margin-left: auto;
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* CSS CONTENT */
+section.languages {
+    background-color: gray;
+    margin-top: 10px;
+}
+
+div.lang {
+    overflow: auto;
+    border-bottom: 1px solid white;
+}
+
+div.image {
+    float: left;
+    width: 10%;
+}
+
+div.image > img {
+    width: 100%;
+    transition: transform ease 1s;
+}
+
+div.image > img:hover {
+    transform: skew(-20deg);
+}
+
+p.para {
+    width: 90%;
+}
+
+/* CSS FOOTER */
+footer {
+    background-color: rgba(0, 0, 255, 0.4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: doimau ease 1s infinite;
+}
+
+@keyframes doimau {
+    from {
+        background-color: rgba(0, 0, 255, 0.4);
+    }
+    
+    to {
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+}
+
+/* CSS SUBMENU */
+.subcontent {
+    /*display:none !important;*/
+    position: absolute;
+    background-color: lightgray;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity ease .5s;
+}
+
+.submenu:hover .subcontent {
+    opacity: 1;
+    visibility: visible;
+    /*display: block !important;*/
+}
+
+/* CSS sharing */
+ul.sharing {
+    list-style-type: none;
+}
+ul.sharing > li {
+    position:fixed;
+    background-color: goldenrod;
+    border-bottom: 1px solid red;
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
+    left: -190px;
+    transition: left .5s;
+    z-index: 999;
+}
+
+ul.sharing > li:hover {
+    left: 0;
+}
+
+ul.sharing > li:nth-child(1) {
+    top: 200px;
+}
+
+ul.sharing > li:nth-child(2) {
+    top: 240px;
+}
+
+ul.sharing > li:nth-child(3) {
+    top: 280px;
+}
