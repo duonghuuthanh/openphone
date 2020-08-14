@@ -13,6 +13,7 @@ ul.menu {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 ul.menu > li {
@@ -40,7 +41,7 @@ ul.menu > li > a:hover {
 /* CSS HEADER */
 header > h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 7vw;
     color: darkblue;
     text-shadow: 3px 4px lightblue;
     animation: doimau 1s infinite;
@@ -89,9 +90,9 @@ div.info {
 h1.subject {
     background-color: darkblue;
     color: white;
-    font-size: 45px;
+    font-size: 4vw;
     padding: 10px;
-    width: 25%;
+    width: 35%;
     border-radius: 20px 20px 0 0;
     margin-bottom: 0;
 }
@@ -144,4 +145,39 @@ ul.subcontent > li > a:hover {
     text-decoration: underline;
     background-color: darkcyan;
     color: white;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+
+    h1.subject {
+        width: 50%;
+    }
+
+    div.product {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: lightskyblue;
+    }
+
+    h1.subject {
+        width: 100%;
+    }
+
+    div.product {
+        width: 100%;
+    }
+
+    ul.menu > li {
+        width: 100%;
+        text-align: left;
+    }
 }
